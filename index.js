@@ -118,13 +118,13 @@ function mapJSON() {
         const liciObject = JSON.parse(liciJson);
 
         liciObject.feed.entry
-            .filter((itemFilter) =>
-                itemFilter.summary[0]._.match(
-                    /\b(?:Junta de Gobierno Local del Ayuntamiento de Jerez|Patronato de la Fundación Centro de Acogida San José|Empresa Municipal de la Vivienda de Jerez|COMUJESA|FUNDARTE|MERCAJEREZ)\b/g
+            //.filter((itemFilter) =>
+                //itemFilter.summary[0]._.match(
+                  //  /\b(?:Junta de Gobierno Local del Ayuntamiento de Jerez|Patronato de la Fundación Centro de Acogida San José|Empresa Municipal de la Vivienda de Jerez|COMUJESA|FUNDARTE|MERCAJEREZ)\b/g
                     // Para comprobar que busca con acentos.
                     // /\b(?:Fundación Computación y Tecnologías Avanzadas de Extremadura)\b/g
-                )
-            )
+                //)
+            //)
             .forEach((elem) => {
                 const itemArray = {
                     link:
